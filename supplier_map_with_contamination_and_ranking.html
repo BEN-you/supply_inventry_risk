@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f34528fcf288cf7570a65f4cc0dc38de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f34528fcf288cf7570a65f4cc0dc38de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f34528fcf288cf7570a65f4cc0dc38de = L.map(
+                "map_f34528fcf288cf7570a65f4cc0dc38de",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bd377d4024b3cfcd4046c6c1916afa92 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_bd377d4024b3cfcd4046c6c1916afa92.addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+    
+            var circle_marker_a8d4ec95d79d3052290fd999681aeeff = L.circleMarker(
+                [37.7749, -122.4194],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_dd3ff8a94f1ad323e47225f97cf3a26d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49cfd171c718a85b8808d3ce5a32d7cf = $(`<div id="html_49cfd171c718a85b8808d3ce5a32d7cf" style="width: 100.0%; height: 100.0%;">Plaxian - US - Contamination: 500</div>`)[0];
+                popup_dd3ff8a94f1ad323e47225f97cf3a26d.setContent(html_49cfd171c718a85b8808d3ce5a32d7cf);
+            
+        
+
+        circle_marker_a8d4ec95d79d3052290fd999681aeeff.bindPopup(popup_dd3ff8a94f1ad323e47225f97cf3a26d)
+        ;
+
+        
+    
+    
+            var circle_marker_91fb7672281b28f5759a199386902fcd = L.circleMarker(
+                [51.1657, 10.4515],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_5e5a44b50b186f771853bd995f5eb31d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_173150b46b6a68897b078dc0ef24e1cd = $(`<div id="html_173150b46b6a68897b078dc0ef24e1cd" style="width: 100.0%; height: 100.0%;">GutesGlas - Germany - Contamination: 200</div>`)[0];
+                popup_5e5a44b50b186f771853bd995f5eb31d.setContent(html_173150b46b6a68897b078dc0ef24e1cd);
+            
+        
+
+        circle_marker_91fb7672281b28f5759a199386902fcd.bindPopup(popup_5e5a44b50b186f771853bd995f5eb31d)
+        ;
+
+        
+    
+    
+            var circle_marker_a43c25a11773c02765433c15fa9c85db = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_2912f8e94ad6f6cd5f8a69f2ba37242e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f54b03cdc7bdf79a4ce22d25926f888 = $(`<div id="html_3f54b03cdc7bdf79a4ce22d25926f888" style="width: 100.0%; height: 100.0%;">Boavidro - Brazil - Contamination: 300</div>`)[0];
+                popup_2912f8e94ad6f6cd5f8a69f2ba37242e.setContent(html_3f54b03cdc7bdf79a4ce22d25926f888);
+            
+        
+
+        circle_marker_a43c25a11773c02765433c15fa9c85db.bindPopup(popup_2912f8e94ad6f6cd5f8a69f2ba37242e)
+        ;
+
+        
+    
+    
+            var circle_marker_ec00fc4ca2f4bd916853db0399ca5620 = L.circleMarker(
+                [20.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_f1969e9edc6dccd9962bd05c095ab529 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d337d11b8a821b1863f4b97816823d9 = $(`<div id="html_0d337d11b8a821b1863f4b97816823d9" style="width: 100.0%; height: 100.0%;">Saanch - India - Contamination: 150</div>`)[0];
+                popup_f1969e9edc6dccd9962bd05c095ab529.setContent(html_0d337d11b8a821b1863f4b97816823d9);
+            
+        
+
+        circle_marker_ec00fc4ca2f4bd916853db0399ca5620.bindPopup(popup_f1969e9edc6dccd9962bd05c095ab529)
+        ;
+
+        
+    
+    
+            var circle_marker_ed4755187472028921cc89e3902b1fef = L.circleMarker(
+                [35.8617, 104.1954],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_31ffd5724c1cecdcaa61fc5065fd12bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a83bb9debbca68ea29cfc93ad43f763e = $(`<div id="html_a83bb9debbca68ea29cfc93ad43f763e" style="width: 100.0%; height: 100.0%;">RealGlass - China - Contamination: 50</div>`)[0];
+                popup_31ffd5724c1cecdcaa61fc5065fd12bd.setContent(html_a83bb9debbca68ea29cfc93ad43f763e);
+            
+        
+
+        circle_marker_ed4755187472028921cc89e3902b1fef.bindPopup(popup_31ffd5724c1cecdcaa61fc5065fd12bd)
+        ;
+
+        
+    
+    
+            var circle_marker_981b9b48c7cb4e86d8de124cae88c86a = L.circleMarker(
+                [35.8617, 104.1954],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_725b71cb7156858e4c898d95f7453ef6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_816bd089193bebbb62ce9a2801f0c349 = $(`<div id="html_816bd089193bebbb62ce9a2801f0c349" style="width: 100.0%; height: 100.0%;">Optikiet - China - Contamination: 50</div>`)[0];
+                popup_725b71cb7156858e4c898d95f7453ef6.setContent(html_816bd089193bebbb62ce9a2801f0c349);
+            
+        
+
+        circle_marker_981b9b48c7cb4e86d8de124cae88c86a.bindPopup(popup_725b71cb7156858e4c898d95f7453ef6)
+        ;
+
+        
+    
+    
+            var circle_marker_8f7e515f3d243472e2a2a9c78ca914ce = L.circleMarker(
+                [37.7749, -122.4194],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_94f6295fa7d68dfba57d6ff757815fbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63c0aa6e5486152a955b2884e05bb27c = $(`<div id="html_63c0aa6e5486152a955b2884e05bb27c" style="width: 100.0%; height: 100.0%;">BestOGlass - US - Contamination: 500</div>`)[0];
+                popup_94f6295fa7d68dfba57d6ff757815fbe.setContent(html_63c0aa6e5486152a955b2884e05bb27c);
+            
+        
+
+        circle_marker_8f7e515f3d243472e2a2a9c78ca914ce.bindPopup(popup_94f6295fa7d68dfba57d6ff757815fbe)
+        ;
+
+        
+    
+    
+            var circle_marker_2621e4d471ae30b1e8941656a78e93b6 = L.circleMarker(
+                [12.8797, 121.774],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_e5e84e22c0dc8f8956a55254f484cb27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11e4b79f9d4d969985900e035ebc81b3 = $(`<div id="html_11e4b79f9d4d969985900e035ebc81b3" style="width: 100.0%; height: 100.0%;">MedicMetric - Philippines - Contamination: 250</div>`)[0];
+                popup_e5e84e22c0dc8f8956a55254f484cb27.setContent(html_11e4b79f9d4d969985900e035ebc81b3);
+            
+        
+
+        circle_marker_2621e4d471ae30b1e8941656a78e93b6.bindPopup(popup_e5e84e22c0dc8f8956a55254f484cb27)
+        ;
+
+        
+    
+    
+            var circle_marker_f645c9a7d25ee42e50be919e98e7935a = L.circleMarker(
+                [23.8859, 45.0792],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_9cc59874e3734c7787a8b6ee1d5635cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10f1ceb7887fbec39cc850aa6317d139 = $(`<div id="html_10f1ceb7887fbec39cc850aa6317d139" style="width: 100.0%; height: 100.0%;">Shale - Saudi Arabia - Contamination: 200</div>`)[0];
+                popup_9cc59874e3734c7787a8b6ee1d5635cb.setContent(html_10f1ceb7887fbec39cc850aa6317d139);
+            
+        
+
+        circle_marker_f645c9a7d25ee42e50be919e98e7935a.bindPopup(popup_9cc59874e3734c7787a8b6ee1d5635cb)
+        ;
+
+        
+    
+    
+            var circle_marker_b88c7c10e8e074a69dfdf8b13a159f7d = L.circleMarker(
+                [41.8719, 12.5674],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_5d4cdc67a62ff01b0642a37f3d29bf6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fde8cf62e6d832ed54a05e1ea46a9675 = $(`<div id="html_fde8cf62e6d832ed54a05e1ea46a9675" style="width: 100.0%; height: 100.0%;">Opticful - Italy - Contamination: 100</div>`)[0];
+                popup_5d4cdc67a62ff01b0642a37f3d29bf6b.setContent(html_fde8cf62e6d832ed54a05e1ea46a9675);
+            
+        
+
+        circle_marker_b88c7c10e8e074a69dfdf8b13a159f7d.bindPopup(popup_5d4cdc67a62ff01b0642a37f3d29bf6b)
+        ;
+
+        
+    
+    
+            var circle_marker_51133811920d5e9ef00519055f137bc2 = L.circleMarker(
+                [37.7749, -122.4194],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_2dc07388ed52a62225db117b1441f490 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b2c8a7a82430a38b14f9e2827499e87 = $(`<div id="html_2b2c8a7a82430a38b14f9e2827499e87" style="width: 100.0%; height: 100.0%;">basicPharm - US - Contamination: 500</div>`)[0];
+                popup_2dc07388ed52a62225db117b1441f490.setContent(html_2b2c8a7a82430a38b14f9e2827499e87);
+            
+        
+
+        circle_marker_51133811920d5e9ef00519055f137bc2.bindPopup(popup_2dc07388ed52a62225db117b1441f490)
+        ;
+
+        
+    
+    
+            var circle_marker_878816db973404b8ac91956cedfb46a2 = L.circleMarker(
+                [20.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f34528fcf288cf7570a65f4cc0dc38de);
+        
+    
+        var popup_0eb9ff69c916d0f062a16a852ecfdffb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6090bf4cae8c9aeac58b78a7710e72c0 = $(`<div id="html_6090bf4cae8c9aeac58b78a7710e72c0" style="width: 100.0%; height: 100.0%;">PharmyLeaf - India - Contamination: 150</div>`)[0];
+                popup_0eb9ff69c916d0f062a16a852ecfdffb.setContent(html_6090bf4cae8c9aeac58b78a7710e72c0);
+            
+        
+
+        circle_marker_878816db973404b8ac91956cedfb46a2.bindPopup(popup_0eb9ff69c916d0f062a16a852ecfdffb)
+        ;
+
+        
+    
+</script>
+</html>
